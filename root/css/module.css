@@ -1,23 +1,28 @@
 .top-wrapper {
-  position:fixed;
   display: grid;
   grid-template-columns: 95% auto;
   max-width: 1920px;
-  height: 130px
+  height: 130px;
   margin: 0 auto;
-  padding:0;
+  padding-top:40px;
 }
 .main-wrapper{
   max-width: 1920px;
-  height: 898px;
+  /* height: 898px; */
   margin: 0 auto;
   display:grid;
 }
 .main-landing {
-  width: 86%;
+  width: 88%;
   height: 898px;
-  margin: 0 auto;
+  margin: 0 auto 260px;
   background-color:#f1dad0;
+  vertical-align: middle;
+}
+.main-after-scroll{
+  width: 1670px;
+  height: 670px;
+  margin: 0 auto 260px;
   vertical-align: middle;
 }
 .main-ci {
@@ -33,16 +38,83 @@
   top:300px;
 }
 .main-middle-text{
-  width: 86%;
-  height: 898px;
-  margin: 40px auto;
+  width: 88%;
+  height: 670px;
+  margin: 40px auto 260px;
   background-color:#f1dad0;
+  color: #fff;
 }
+.main-middle-text01 {
+  font-size: 7em;
+  font-weight: bold;
+  padding:10px 0 0 1000px;
+}
+.main-middle-text02 {
+  font-size: 6em;
+  font-weight: bold;
+  padding-left:100px;
+}
+.main-middle-text03 {
+  font-size: 4em;
+  font-weight: bold;
+  float:right;
+  padding:0 100px 0 0;
+}
+.main-middle-text04 {
+  font-size: 5em;
+  font-weight: bold;
+  float:right;
+  padding:0 100px 0 0;
+}
+.main-middle-text05 {
+  font-size: 6em;
+  font-weight: bold;
+  padding:10px 0 0 200px;
+}
+.main-middle-text06 {
+  font-size: 6em;
+  font-weight: bold;
+  float:right;
+  padding:0 500px 0 0;
+}
+.main-middle-text07 {
+  font-size: 4em;
+  font-weight: bold;
+  padding-left:500px;
+}
+.main-middle-text08 {
+  font-size: 6em;
+  font-weight: bold;
+  padding:0 0 0 200px;
+}
+.main-middle-text09 {
+  font-size: 5em;
+  font-weight: bold;
+  float:right;
+  padding:0 150px 0 300px;
+}
+.main-aboutMe{
+  display: grid;
+  grid-template-columns: 654px auto;
+  width: 88%;
+  height: 810px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.photo-me{
 
+  height: 810px;
+  margin: 0 122px 0 0;
+}
+.text-me{
+
+  height: 810px;
+  margin-right:260PX;
+}
 
 /******************** Script **********************/
 /******************** fixed nav *******************/
-#fixed-title {
+/* #fixed-title {
        text-align: center;
      }
      #fixed-menu {
@@ -67,4 +139,4 @@
      #fixed-menu li {
        display: inline-block;
        margin-right: 50px;
-     }
+     } */
