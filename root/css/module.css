@@ -1,10 +1,15 @@
 .top-wrapper {
-  display: grid;
-  grid-template-columns: 95% auto;
+  position: relative;
   max-width: 1920px;
   height: 130px;
   margin: 0 auto;
   padding-top:40px;
+}
+.wrapper-nav{
+  position: fixed;
+  display: grid;
+  grid-template-columns: 95% auto;
+  width: 1920px;
 }
 .main-wrapper{
   max-width: 1920px;
@@ -41,6 +46,7 @@
   width: 88%;
   height: 670px;
   margin: 40px auto 260px;
+
   background-color:#f1dad0;
   color: #fff;
 }
@@ -61,7 +67,7 @@
   padding:0 100px 0 0;
 }
 .main-middle-text04 {
-  font-size: 5em;
+  font-size: 4.5em;
   font-weight: bold;
   float:right;
   padding:0 100px 0 0;
@@ -70,12 +76,14 @@
   font-size: 6em;
   font-weight: bold;
   padding:10px 0 0 200px;
+  font-family: 'Lora', serif;
 }
 .main-middle-text06 {
   font-size: 6em;
   font-weight: bold;
   float:right;
   padding:0 500px 0 0;
+  font-family: 'Rosarivo', serif;
 }
 .main-middle-text07 {
   font-size: 4em;
@@ -83,34 +91,43 @@
   padding-left:500px;
 }
 .main-middle-text08 {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold;
   padding:0 0 0 200px;
 }
 .main-middle-text09 {
   font-size: 5em;
-  font-weight: bold;
   float:right;
   padding:0 150px 0 300px;
+  font-family: 'Prompt', sans-serif, ital;
 }
 .main-aboutMe{
   display: grid;
-  grid-template-columns: 654px auto;
+  grid-template-columns: 654px 895px;
   width: 88%;
   height: 810px;
-  margin: 0 auto;
+  margin: 0 auto 260px;
   vertical-align: middle;
 }
-.photo-me{
-
+.photo-me {
+  grid-template-columns: 654px;
   height: 810px;
-  margin: 0 122px 0 0;
+  margin: 0;
 }
-.text-me{
-
+.text-me {
   height: 810px;
-  margin-right:260PX;
+  margin-left:160PX;
+  font-family: 'Rosarivo', serif;
 }
+.text-me h1{
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom:120px;
+}
+.text-me p{
+
+}
+
 
 /******************** Script **********************/
 /******************** fixed nav *******************/
