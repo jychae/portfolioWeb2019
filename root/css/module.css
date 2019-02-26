@@ -8,44 +8,52 @@
 .wrapper-nav{
   position: fixed;
   display: grid;
-  grid-template-columns: 95% auto;
+  grid-template-columns: 75% auto;
   width: 1920px;
+  z-index: 999;
 }
+.wrapper-nav img {
+  padding-left: 30px;
+}
+/******************** main **********************/
 .main-wrapper{
+  position: relative;
   max-width: 1920px;
   /* height: 898px; */
-  margin: 0 auto;
+  margin: -130px auto 0;
   display:grid;
 }
 .main-landing {
   width: 88%;
   height: 898px;
-  margin: 0 auto 260px;
+  margin: 0 auto;
   background-color:#f1dad0;
   vertical-align: middle;
 }
-.main-after-scroll{
+.main-colour-block img{
   width: 1670px;
   height: 670px;
-  margin: 0 auto 260px;
+  margin: 0 auto;
   vertical-align: middle;
 }
+.show-on-scroll { visibility: hidden; }
+.show-on-scroll.shown { visibility: visible; }
 .main-ci {
+  position: relative;
   width: 100%;
   height: 500px;
   float: left;
   text-align: center;
-  margin: 200px auto 0;
+  margin: 0 auto 0;
   font-size: 25em;
   font-weight: bold;
   color: #fc7651;
   vertical-align: middle;
-  top:300px;
 }
 .main-middle-text{
   width: 88%;
   height: 670px;
-  margin: 40px auto 260px;
+  margin: 0 auto;
 
   background-color:#f1dad0;
   color: #fff;
@@ -102,21 +110,33 @@
   font-family: 'Prompt', sans-serif, ital;
 }
 .main-aboutMe{
+  display: inline-block;
   display: grid;
-  grid-template-columns: 654px 895px;
-  width: 88%;
+  grid-template-columns: auto auto;
+  position: relative;
   height: 810px;
-  margin: 0 auto 260px;
+  margin: 0 auto;
   vertical-align: middle;
 }
 .photo-me {
-  grid-template-columns: 654px;
-  height: 810px;
-  margin: 0;
+  position: relative;
+  vertical-align:'top';
+    display: inline-block;
+  height: 75%;
+  min-height: 570px;
+  width:40%;
+  margin:130px 0;
+  padding-top:130px;
+  background: #f1dad0;
 }
 .text-me {
-  height: 810px;
-  margin-left:160PX;
+  position:relative;
+  vertical-align:'top';
+    display: inline-block;
+  margin:0;
+  padding-top:0;
+  width:40%;
+  min-height: 570px;
   font-family: 'Rosarivo', serif;
 }
 .text-me h1{
@@ -127,7 +147,7 @@
 .text-me p{
 
 }
-
+/******************** main ends **********************/
 
 /******************** Script **********************/
 /******************** fixed nav *******************/

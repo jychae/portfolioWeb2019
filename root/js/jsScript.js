@@ -12,3 +12,11 @@
         });
       } );
     </script>
+
+<!-- main colour bolock hide and show_Scroll -->
+ $(window).scroll(function() {
+  var $el = $('.show-on-scroll');
+
+  if($(this).scrollTop() >= 400) $el.addClass('shown');
+  else $el.removeClass('shown');
+});

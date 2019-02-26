@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
   <title>Welcome</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -36,16 +35,16 @@
 
   </nav>
   <!-- nav ends -->
-  <div class="main-wrapper">
-    <div class="main-landing">
+  <div id="myContainer" class="main-wrapper">
+    <div class="section main-landing">
       <p class="main-ci wow tada">c3</p>
     </div>
-    <div class="main-colour-block">
+    <div class="section main-colour-block">
       <img src="images/backPatern.png" alt="">
       <div class="">
       </div>
     </div>
-    <div class="main-middle-text">
+    <div class="section main-middle-text">
       <p class="main-middle-text01">Javascript</p>
       <p class="main-middle-text02">Web Designer</p>
       <p class="main-middle-text03">Simple</p>
@@ -56,9 +55,9 @@
       <p class="main-middle-text08">CSS</p>
       <p class="main-middle-text09">Straightforward</p>
     </div>
-    <div class="main-aboutMe">
+    <div class="section main-aboutMe fp-table">
       <div class="photo-me">
-        <img src="images/backPatern02.png" alt="">
+        <!-- <img src="images/backPatern02.png" alt=""> -->
       </div>
       <div class="text-me">
         <h1>About me</h1>
@@ -69,6 +68,43 @@
   <footer>
     <p>Footer</p>
   </footer>
+  <input type="hidden" id="_4" value="3" />
+
+  <!-- WARNING!! -->
+  <!-- This file is limited. You can't use it to test the extension! It won't work. -->
+  <!-- You have to purchase it to try it as detailed in the FAQs:  -->
+  <!-- https://alvarotrigo.com/fullPage/extensions/faqs.html-->
+  <script type="text/javascript" src="js/fullpage.scrollHorizontally.limited.min.js"></script>
+  <!-- END WARNING-->
+
+  <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+
+  <script type="text/javascript">
+  	new fullpage('#myContainer', {
+  		sectionsColor: ['#f1dad0', '#fff', '#f1dad0', '#fff', '#ccddff', '#ccc'],
+  		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+  		menu: '#menu',
+  		slidesNavigation: true,
+  		scrollHorizontally: true,
+  		scrollHorizontallyKey: 'YWx2YXJvdHJpZ28uY29tX01mU2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NVNRcg==',
+  		afterSlideLoad: function(section, origin, destination, direction){
+  			console.log({
+  				section: section,
+  				origin: origin,
+  				destination: destination,
+  				direction: direction
+  			});
+  		},
+  		onSlideLeave: function(section, origin, destination, direction){
+  			console.log({
+  				section: section,
+  				origin: origin,
+  				destination: destination,
+  				direction: direction
+  			});
+  		}
+  	});
+  </script>
 </body>
 
 </html>
