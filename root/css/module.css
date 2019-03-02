@@ -34,12 +34,28 @@
   background-color:#f1dad0;
   vertical-align: middle;
 }
-.main-colour-block img{
+.main-block-color {
+  position:relative;
   max-width: 1670px;
   width: 100%;
   height: 670px;
   margin: 0 auto;
   vertical-align: middle;
+}
+.main-me {
+  position:absolute;
+  max-width: 1670px;
+  width: 100%;
+  height: 670px;
+  margin: 0 auto;
+  z-index: 999;
+}
+.main-me img {
+  width: 371px;
+  height: 634px;
+  margin: 36px auto 0 0;
+  vertical-align: middle;
+  z-index: 999;
 }
 .show-on-scroll { visibility: hidden; }
 .show-on-scroll.shown { visibility: visible; }
@@ -55,63 +71,63 @@
   color: #fc7651;
   vertical-align: middle;
 }
-.main-middle-text{
+.main-middle-contents{
+  position: relative;
   width: 88%;
   height: 670px;
   margin: 0 auto;
-
+  padding:0;
   background-color:#f1dad0;
+}
+.main-middle-text{
+  position: relative;
+  width: 70%;
+  height: 70%;
+  /* margin: 0 auto; */
   color: #fff;
 }
 .main-middle-text01 {
-  font-size: 7em;
+  position: relative;
+  font-size: 5em;
   font-weight: bold;
-  padding:10px 0 0 1000px;
+
 }
 .main-middle-text02 {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold;
-  padding-left:100px;
 }
 .main-middle-text03 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
-  float:right;
-  padding:0 100px 0 0;
+
 }
 .main-middle-text04 {
-  font-size: 4.5em;
+  font-size: 4em;
   font-weight: bold;
-  float:right;
-  padding:0 100px 0 0;
+
 }
 .main-middle-text05 {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold;
-  padding:10px 0 0 200px;
   font-family: 'Lora', serif;
 }
 .main-middle-text06 {
-  font-size: 6em;
+  font-size: 3em;
   font-weight: bold;
-  float:right;
-  padding:0 500px 0 0;
+
   font-family: 'Rosarivo', serif;
 }
 .main-middle-text07 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
-  padding-left:500px;
 }
 .main-middle-text08 {
-  font-size: 5em;
+  font-size: 3em;
   font-weight: bold;
-  padding:0 0 0 200px;
 }
 .main-middle-text09 {
-  font-size: 5em;
+  font-size: 4em;
   float:right;
-  padding:0 150px 0 300px;
   font-family: 'Prompt', sans-serif, ital;
 }
 .main-aboutMe{
